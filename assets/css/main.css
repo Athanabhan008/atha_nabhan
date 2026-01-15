@@ -217,6 +217,15 @@ h6 {
   .header {
     left: -100%;
   }
+
+  /* Ensure main content is full width on mobile */
+  .main {
+    margin-left: 0 !important;
+  }
+
+  #footer {
+    margin-left: 0 !important;
+  }
 }
 
 .header.header-show {
@@ -614,6 +623,415 @@ section,
   }
 
   .hero p {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Mobile Responsive Improvements
+--------------------------------------------------------------*/
+@media (max-width: 1199px) {
+  .main {
+    margin-left: 0;
+  }
+
+  .header {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .header .profile-img img {
+    width: 100px;
+    margin: 10px auto;
+  }
+
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .header .social-links a {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Section Padding */
+  section,
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    padding-bottom: 40px;
+  }
+
+  .section-title p {
+    font-size: 15px;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 60px 0;
+    min-height: 80vh;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  /* About Section */
+  .about .content h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about .content ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .about .content ul strong {
+    font-size: 14px;
+    min-width: 100px;
+    display: inline-block;
+  }
+
+  .about .content ul li a {
+    display: block;
+    width: 100%;
+  }
+
+  /* Resume Section */
+  .resume .resume-title {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .resume .resume-item {
+    padding: 0 0 15px 15px;
+  }
+
+  .resume .resume-item h4 {
+    font-size: 16px;
+  }
+
+  .resume .resume-item h5 {
+    font-size: 14px;
+    padding: 4px 12px;
+  }
+
+  .resume .resume-item ul {
+    padding-left: 15px;
+  }
+
+  .resume .resume-item ul li {
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+
+  /* Portfolio Section */
+  .portfolio .portfolio-content .portfolio-info h4 {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .portfolio .portfolio-content .portfolio-info p {
+    font-size: 14px;
+    bottom: 8px;
+  }
+
+  /* Services Section */
+  .services .service-item {
+    margin-bottom: 30px;
+  }
+
+  .services .service-item .icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+
+  .services .service-item .icon i {
+    font-size: 20px;
+  }
+
+  .services .service-item .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .services .service-item .description {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  /* Contact Section */
+  .contact .info-wrap {
+    margin-bottom: 30px;
+  }
+
+  .contact .info-item {
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+
+  .contact .info-item > div {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .contact .info-item i {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .contact .info-item h3 {
+    font-size: 16px;
+  }
+
+  .contact .info-item p {
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  .contact .info-item a {
+    word-break: break-all;
+  }
+
+  .contact .php-email-form {
+    padding: 25px 20px;
+  }
+
+  .contact .php-email-form input[type=text],
+  .contact .php-email-form input[type=email],
+  .contact .php-email-form textarea {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .contact .php-email-form button[type=submit] {
+    padding: 12px 25px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 0;
+    font-size: 13px;
+  }
+
+  /* Scroll Top */
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .scroll-top i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Hero Section */
+  .hero {
+    padding: 50px 0;
+    min-height: 70vh;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* Section Title */
+  .section-title h2 {
+    font-size: 22px;
+  }
+
+  /* About Section */
+  .about .content h2 {
+    font-size: 18px;
+  }
+
+  .about .content ul {
+    font-size: 13px;
+  }
+
+  .about .content ul strong {
+    min-width: 90px;
+    font-size: 13px;
+  }
+
+  /* Resume Section */
+  .resume .resume-title {
+    font-size: 18px;
+  }
+
+  .resume .resume-item h4 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .resume .resume-item h5 {
+    font-size: 13px;
+    padding: 3px 10px;
+  }
+
+  /* Portfolio Section */
+  .portfolio .portfolio-content .portfolio-info {
+    padding: 10px;
+  }
+
+  .portfolio .portfolio-content .portfolio-info h4 {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .portfolio .portfolio-content .portfolio-info p {
+    font-size: 12px;
+    bottom: 5px;
+  }
+
+  /* Services Section */
+  .services .service-item .icon {
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+  }
+
+  .services .service-item .icon i {
+    font-size: 18px;
+  }
+
+  .services .service-item .title {
+    font-size: 15px;
+  }
+
+  .services .service-item .description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  /* Services - Stack on very small screens */
+  .services .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services .service-item .icon {
+    margin: 0 auto 12px auto;
+  }
+
+  /* Contact Section */
+  .contact .info-wrap {
+    padding: 20px 15px;
+  }
+
+  .contact .info-item {
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact .info-item i {
+    margin-bottom: 10px;
+  }
+
+  .contact .php-email-form {
+    padding: 20px 15px;
+  }
+
+  .contact .php-email-form label {
+    font-size: 13px;
+  }
+
+  /* Google Maps iframe */
+  .contact iframe {
+    width: 100% !important;
+    height: 250px !important;
+    border-radius: 8px;
+  }
+
+  /* About Section - Mobile */
+  .about .content ul li {
+    align-items: flex-start;
+  }
+
+  .about .content ul li strong {
+    margin-bottom: 5px;
+  }
+
+  /* Portfolio Grid */
+  .portfolio .isotope-container .col-lg-4 {
+    margin-bottom: 20px;
+  }
+
+  /* Services - Stack on very small screens */
+  .services .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services .service-item .icon {
+    margin: 0 auto 12px auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .section-title h2 {
+    font-size: 20px;
+  }
+
+  .header .logo h1 {
+    font-size: 18px;
+  }
+
+  /* Additional mobile improvements */
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .about .content ul li {
+    font-size: 12px;
+  }
+
+  .resume .resume-item ul li {
+    font-size: 12px;
+  }
+
+  .portfolio .portfolio-content .portfolio-info .preview-link {
     font-size: 20px;
   }
 }
